@@ -1,0 +1,57 @@
+{
+  "catalog_items": [
+    {
+      "id": 101,
+      "full_name": "NVIDIA GeForce RTX 4070 Ti",
+      "short_name": "RTX4070Ti",
+      "author": "NVIDIA",
+      "description": "Потужна відеокарта для ігор у 4K та роботи з графікою. Оснащена сучасною архітектурою Ada Lovelace та підтримкою DLSS 3.",
+      "price": 799.00
+    },
+    {
+      "id": 102,
+      "full_name": "AMD Radeon RX 7900 XT",
+      "short_name": "RX7900XT",
+      "author": "AMD",
+      "description": "Високопродуктивна карта для ігор та рендерингу. Має 20 ГБ GDDR6 і підтримку Ray Tracing.",
+      "price": 749.00
+    },
+    {
+      "id": 103,
+      "full_name": "NVIDIA GeForce RTX 3060",
+      "short_name": "RTX3060",
+      "author": "NVIDIA",
+      "description": "Середньоцінова модель для комфортного геймінгу на високих налаштуваннях. Оптимальна продуктивність за свою ціну.",
+      "price": 349.00
+    },
+    {
+      "id": 104,
+      "full_name": "MSI GeForce GTX 1660 Super",
+      "short_name": "GTX1660Super",
+      "author": "MSI",
+      "description": "Ідеальне рішення для Full HD ігор. Компактна та енергоефективна відеокарта з 6 ГБ пам'яті.",
+      "price": 239.00
+    },
+    {
+      "id": 105,
+      "full_name": "ASUS TUF Gaming RTX 4080",
+      "short_name": "ASUSRTX4080",
+      "author": "ASUS",
+      "description": "Флагманська модель із чудовим охолодженням і RGB-підсвіткою. Підходить для найвибагливіших користувачів.",
+      "price": 1199.00
+    },
+    {
+      "id": 106,
+      "full_name": "Gigabyte Radeon RX 6700 XT",
+      "short_name": "RX6700XT",
+      "author": "Gigabyte",
+      "description": "Відеокарта середнього класу з чудовою продуктивністю для 2K-роздільності. Оснащена 12 ГБ пам'яті.",
+      "price": 479.00
+    }
+  ],
+  "category": {
+    "short_name": "videocards",
+    "full_name": "Відеокарти",
+    "special_instructions": ""
+  }
+}

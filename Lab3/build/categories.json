@@ -1,0 +1,28 @@
+[{
+  "id": 1,
+  "full_name": "Відеокарти",
+  "short_name": "videocards",
+  "notes": "",
+  "url": "./videocards.json"
+},
+{
+  "id": 2,
+  "full_name": "Процесори",
+  "short_name": "processors",
+  "notes": "",
+  "url": "./processors.json"
+},
+{
+  "id": 3,
+  "full_name": "Материнські плати",
+  "short_name": "motherboards",
+  "notes": "",
+  "url": "./motherboards.json"
+},
+{
+  "id": 4,
+  "full_name": "Оперативна пам’ять",
+  "short_name": "ram",
+  "notes": "",
+  "url": "./ram.json"
+}]

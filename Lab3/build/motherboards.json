@@ -1,0 +1,57 @@
+{
+  "catalog_items": [
+    {
+      "id": 301,
+      "full_name": "ASUS ROG Strix Z790-E Gaming",
+      "short_name": "Z790E",
+      "author": "ASUS",
+      "description": "Материнська плата преміум-класу з підтримкою DDR5, PCIe 5.0 та розширеною системою охолодження.",
+      "price": 489.0
+    },
+    {
+      "id": 302,
+      "full_name": "MSI B550 Tomahawk",
+      "short_name": "B550Tomahawk",
+      "author": "MSI",
+      "description": "Популярна плата для платформи AM4 з гарною стабільністю живлення та підтримкою PCIe 4.0.",
+      "price": 169.0
+    },
+    {
+      "id": 303,
+      "full_name": "Gigabyte X670 AORUS Elite AX",
+      "short_name": "X670AORUS",
+      "author": "Gigabyte",
+      "description": "Материнська плата для процесорів Ryzen нового покоління з підтримкою DDR5 та Wi-Fi 6E.",
+      "price": 289.0
+    },
+    {
+      "id": 304,
+      "full_name": "ASRock B450M Steel Legend",
+      "short_name": "B450SteelLegend",
+      "author": "ASRock",
+      "description": "Компактна плата з хорошим дизайном і підтримкою процесорів AMD Ryzen до 5000 серії.",
+      "price": 109.0
+    },
+    {
+      "id": 305,
+      "full_name": "ASUS Prime Z690-P WiFi",
+      "short_name": "Z690PrimeWiFi",
+      "author": "ASUS",
+      "description": "Надійна плата з підтримкою Intel 12 покоління, DDR5 і бездротовим з’єднанням.",
+      "price": 229.0
+    },
+    {
+      "id": 306,
+      "full_name": "MSI MPG Z790 Carbon WiFi",
+      "short_name": "Z790Carbon",
+      "author": "MSI",
+      "description": "Потужна плата з акцентом на геймінг і продуктивність, з RGB-підсвіткою і WiFi 6.",
+      "price": 369.0
+    }
+  ],
+  "category": {
+    "short_name": "motherboards",
+    "full_name": "Материнські плати",
+    "special_instructions": ""
+  }
+}

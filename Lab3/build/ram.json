@@ -1,0 +1,57 @@
+{
+  "catalog_items": [
+    {
+      "id": 401,
+      "full_name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz",
+      "short_name": "CorsairLPX16GB",
+      "author": "Corsair",
+      "description": "Надійна оперативна пам'ять з низьким профілем, сумісна з більшістю систем.",
+      "price": 59.0
+    },
+    {
+      "id": 402,
+      "full_name": "G.Skill Trident Z RGB 32GB (2x16GB) DDR4 3600MHz",
+      "short_name": "TridentZ32GB",
+      "author": "G.Skill",
+      "description": "Стильна та швидка пам’ять із RGB-підсвіткою, популярна серед геймерів і ентузіастів.",
+      "price": 129.0
+    },
+    {
+      "id": 403,
+      "full_name": "Kingston Fury Beast 16GB DDR5 5600MHz",
+      "short_name": "FuryBeastDDR5",
+      "author": "Kingston",
+      "description": "DDR5-пам’ять нового покоління з високою пропускною здатністю та стабільною роботою.",
+      "price": 109.0
+    },
+    {
+      "id": 404,
+      "full_name": "TEAMGROUP T-Force Delta RGB 32GB DDR5 6000MHz",
+      "short_name": "TForceDelta32GB",
+      "author": "TEAMGROUP",
+      "description": "Оперативна пам’ять із агресивним дизайном і високою швидкістю, ідеальна для ігрових ПК.",
+      "price": 169.0
+    },
+    {
+      "id": 405,
+      "full_name": "Patriot Viper Steel 16GB (2x8GB) DDR4 4000MHz",
+      "short_name": "ViperSteel16GB",
+      "author": "Patriot",
+      "description": "Високошвидкісна пам’ять з металевим радіатором, добре підходить для оверклокінгу.",
+      "price": 89.0
+    },
+    {
+      "id": 406,
+      "full_name": "ADATA XPG Lancer 32GB DDR5 5200MHz",
+      "short_name": "XPGDDR5Lancer",
+      "author": "ADATA",
+      "description": "Сучасна DDR5 пам’ять з хорошим співвідношенням ціна/швидкість, підтримує Intel XMP 3.0.",
+      "price": 139.0
+    }
+  ],
+  "category": {
+    "short_name": "ram",
+    "full_name": "Оперативна пам’ять",
+    "special_instructions": ""
+  }
+}

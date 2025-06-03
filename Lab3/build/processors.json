@@ -1,0 +1,57 @@
+{
+  "catalog_items": [
+    {
+      "id": 201,
+      "full_name": "Intel Core i9-13900K",
+      "short_name": "i913900K",
+      "author": "Intel",
+      "description": "Процесор флагманського рівня з 24 ядрами для найвищої продуктивності. Підходить для ігор та важких задач.",
+      "price": 589.00
+    },
+    {
+      "id": 202,
+      "full_name": "AMD Ryzen 9 7900X",
+      "short_name": "Ryzen97900X",
+      "author": "AMD",
+      "description": "Потужний 12-ядерний процесор з високою частотою та ефективністю. Ідеальний для стріму й рендерингу.",
+      "price": 479.00
+    },
+    {
+      "id": 203,
+      "full_name": "Intel Core i5-13600KF",
+      "short_name": "i513600KF",
+      "author": "Intel",
+      "description": "Баланс між ціною та продуктивністю. Має 14 ядер і гарну продуктивність у повсякденних задачах.",
+      "price": 309.00
+    },
+    {
+      "id": 204,
+      "full_name": "AMD Ryzen 5 5600X",
+      "short_name": "Ryzen55600X",
+      "author": "AMD",
+      "description": "6-ядерний процесор для бюджетних ігрових збірок. Працює на архітектурі Zen 3.",
+      "price": 199.00
+    },
+    {
+      "id": 205,
+      "full_name": "Intel Core i7-12700F",
+      "short_name": "i712700F",
+      "author": "Intel",
+      "description": "Високопродуктивний процесор із 12 ядрами. Добре підходить для мультитаскінгу та офісної роботи.",
+      "price": 359.00
+    },
+    {
+      "id": 206,
+      "full_name": "AMD Ryzen 7 7700X",
+      "short_name": "Ryzen77700X",
+      "author": "AMD",
+      "description": "Новітній 8-ядерний чіп з високою частотою та підтримкою PCIe 5.0. Ідеальний для сучасних ПК.",
+      "price": 399.00
+    }
+  ],
+  "category": {
+    "short_name": "processors",
+    "full_name": "Процесори",
+    "special_instructions": ""
+  }
+}
