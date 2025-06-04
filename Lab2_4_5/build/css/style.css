@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e293b 0%, #1e40af 50%, #0891b2 100%);
+    color: white;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+/* Меню гри */
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.menu-content {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.game-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-button {
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+}
+
+.pvp-button {
+    background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.pvp-button:hover {
+    background: linear-gradient(135deg, #059669, #0f766e);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+.pve-button {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.pve-button:hover {
+    background: linear-gradient(135deg, #ea580c, #dc2626);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(249, 115, 22, 0.4);
+}
+
+/* Ігрове поле */
+.game-container {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.game-header .game-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.message-panel {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.game-message {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #22d3ee;
+    font-weight: 600;
+}
+
+.ship-controls {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.control-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #eab308, #f59e0b);
+    color: white;
+}
+
+.control-button:hover {
+    background: linear-gradient(135deg, #ca8a04, #d97706);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.menu-return-btn {
+    background: linear-gradient(135deg, #ef4444, #f43f5e) !important;
+}
+
+.menu-return-btn:hover {
+    background: linear-gradient(135deg, #dc2626, #e11d48) !important;
+}
+
+.ship-info {
+    color: #a5f3fc;
+    font-size: 1.1rem;
+}
+
+.ship-size {
+    color: #fbbf24;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Дошки */
+.boards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    .boards-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.board-section {
+    text-align: center;
+}
+
+.board-header {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.player1-header {
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.player2-header {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.board-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.player1-header h2 {
+    color: #6ee7b7;
+}
+
+.player2-header h2 {
+    color: #fca5a5;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 3px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(30, 64, 175, 0.5));
+    border-radius: 15px;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.board-cell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(34, 211, 238, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.board-cell:hover {
+    border-color: #22d3ee;
+    transform: scale(1.1);
+}
+
+/* Стани клітин */
+.cell-empty {
+    background: linear-gradient(135deg, #475569, #64748b);
+}
+
+.cell-empty:hover {
+    background: linear-gradient(135deg, #475569, #64748b);
+}
+
+.cell-ship {
+    background: linear-gradient(135deg, #4b5563, #6b7280);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cell-ship.own-board {
+    background: linear-gradient(135deg, #4b5563, #6b7280);
+}
+
+.cell-ship.enemy-board {
+    background: linear-gradient(135deg, #4b5563, #6b7280);
+}
+
+.cell-hit {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: hitPulse 0.5s ease-out;
+}
+
+.cell-miss {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cell-sunk {
+    background: linear-gradient(135deg, #7f1d1d, #991b1b);
+    box-shadow: 0 0 20px rgba(127, 29, 29, 0.7), inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    animation: sunkPulse 1s ease-out;
+}
+
+.board-cell.placing:hover {
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
+    border-color: #eab308;
+}
+
+.board-cell.targeting:hover {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+    cursor: crosshair;
+}
+
+/* Анімації */
+@keyframes hitPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sunkPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+/* Панель переможця */
+.winner-panel {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(234, 179, 8, 0.5);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.winner-message {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: winnerGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes winnerGlow {
+    0% {
+        text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+    }
+
+    100% {
+        text-shadow: 0 0 40px rgba(251, 191, 36, 0.7);
+    }
+}
+
+.new-game-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+}
+
+.new-game-btn:hover {
+    background: linear-gradient(135deg, #047857, #065f46) !important;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-content {
+        padding: 30px;
+    }
+
+    .menu-button {
+        min-width: 250px;
+        padding: 15px 30px;
+    }
+
+    .boards-container {
+        gap: 20px;
+    }
+
+    .game-board {
+        padding: 15px;
+        max-width: 350px;
+    }
+
+    .board-cell {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 2rem;
+    }
+
+    .game-board {
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .board-cell {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+}
+
+.game-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.game-history::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.game-history::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.game-history::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
